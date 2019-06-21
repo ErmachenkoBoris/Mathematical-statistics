@@ -41,7 +41,9 @@
 ![](../../images/Mathematical-statistics/ticket03.png)
 
 ![](https://latex.codecogs.com/svg.latex?y_{1}<y_{2}<...<y_{s}<y_{s&plus;1})
+
 ![](https://latex.codecogs.com/svg.latex?y_{1}\leq&space;x_{1})
+
 ![](https://latex.codecogs.com/svg.latex?y_{s&plus;1}\geq&space;x_{k})
 
 Дальше считают сколько элементов выборки попало в каждый разряд.
