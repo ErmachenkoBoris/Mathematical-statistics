@@ -9,13 +9,18 @@
 
 1. Данные представлены в виде простого или вариационного ряда
 ![](https://latex.codecogs.com/svg.latex?x_{1}),![](https://latex.codecogs.com/svg.latex?x_{2}),...,![](https://latex.codecogs.com/svg.latex?x_{n})
-![](https://latex.codecogs.com/svg.latex?M\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{n}x_{i})
-![](https://latex.codecogs.com/svg.latex?D\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-M\xi&space;^{*})^{2}=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{2}-(M\xi&space;^{*})^{2})
+
+![](https://latex.codecogs.com/svg.latex?M\xi^{*}=\frac{1}{n}\sum_{i=1}^{n}x_{i})
+
+![](https://latex.codecogs.com/svg.latex?D\xi^{*}=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-M\xi^{*})^{2}=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{2}-(M\xi&space;^{*})^{2})
 
 2. Данные в виде статистического распределения в выборке
 ![](https://latex.codecogs.com/svg.latex?x_{1}),![](https://latex.codecogs.com/svg.latex?x_{2}),...,![](https://latex.codecogs.com/svg.latex?x_{n})
+
 ![](https://latex.codecogs.com/svg.latex?k\leq&space;n)
+
 ![](https://latex.codecogs.com/svg.latex?M\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*x_{i})
+
 ![](https://latex.codecogs.com/svg.latex?D\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*(x_{i}-M\xi&space;^{*})^{2}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*x_{i}^{2}-(M\xi&space;^{*})^{2})
 
 3. Данные в виде информационно-статистической таблицы
