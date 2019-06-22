@@ -37,24 +37,25 @@
 ![](https://latex.codecogs.com/svg.latex?\lim_{n&space;\to&space;\propto&space;}&space;(\frac{pq}{n})&space;=&space;0)
 
 #### 3. Состоятельность
-    Из 1, 2 по теореме 3 следует состоятельность
+Из 1, 2 по теореме 3 следует состоятельность
+
 #### 4. 
-    ![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;P(\left&space;|&space;\tilde{P}&space;-&space;P&space;\right&space;|&space;<&space;\varepsilon&space;)&space;=&space;...&space;=&space;\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{pq}}))
+![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;P(\left&space;|&space;\tilde{P}&space;-&space;P&space;\right&space;|&space;<&space;\varepsilon&space;)&space;=&space;...&space;=&space;\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{pq}}))
 
-    p, q - мы не знаем. p, q мы заменяем оценками.
+p, q - мы не знаем. p, q мы заменяем оценками.
 
-    Предположим, что опыт провели n раз и n раз наблюдали событие А. Тогда относительная частота будет
+Предположим, что опыт провели n раз и n раз наблюдали событие А. Тогда относительная частота будет
 
-    ![](https://latex.codecogs.com/svg.latex?\tilde{p}=\tfrac{m}{n})
+![](https://latex.codecogs.com/svg.latex?\tilde{p}=\tfrac{m}{n})
 
-    ![](https://latex.codecogs.com/svg.latex?\tilde{q}=1&space;-&space;\tfrac{m}{n})
+![](https://latex.codecogs.com/svg.latex?\tilde{q}=1&space;-&space;\tfrac{m}{n})
 
-    ![](https://latex.codecogs.com/svg.latex?\approx&space;\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{\tfrac{m}{n}(1-\frac{m}{n}))}}))
+![](https://latex.codecogs.com/svg.latex?\approx&space;\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{\tfrac{m}{n}(1-\frac{m}{n}))}}))
 
-    Мы можем решить те же 3 задачки, рассматриваемые ранее 
-    Задача: ![](https://latex.codecogs.com/svg.latex?\gamma&space;,&space;\varepsilon) - известны, нужно найти n. 
+Мы можем решить те же 3 задачки, рассматриваемые ранее 
+Задача: ![](https://latex.codecogs.com/svg.latex?\gamma&space;,&space;\varepsilon) - известны, нужно найти n. 
 
-    ![](https://latex.codecogs.com/svg.latex?\gamma=0,95), то ![](https://latex.codecogs.com/svg.latex?n\approx&space;\frac{1}{\varepsilon&space;^{2}})
+![](https://latex.codecogs.com/svg.latex?\gamma=0,95), то ![](https://latex.codecogs.com/svg.latex?n\approx&space;\frac{1}{\varepsilon&space;^{2}})
 
 
 ###
