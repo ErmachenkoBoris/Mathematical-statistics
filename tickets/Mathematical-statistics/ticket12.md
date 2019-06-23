@@ -2,7 +2,7 @@
 
 #### Теоретические моменты
 
-![](https://latex.codecogs.com/gif.latex?alpha_%7Bk%7D%5Cxi%3DM%28%5Cxi%5E%7Bk%7D%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%5Csum_%7Bi%7Dx_%7Bi%7D%5E%7Bk%7Dp%28%5Cxi%3Dx_%7Bi%7D%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-d.s.v.%29%5C%5C%5Cint_%7B-%5Cpropto%7D%5E%7B&plus;%5Cpropto%7Dx%5E%7Bk%7Df_%7B%5Cxi%7D%28x%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-n.s.v.%29%5Cend%7Bmatrix%7D%5Cright.)
+![](https://latex.codecogs.com/gif.latex?%5Calpha_%7Bk%7D%5Cxi%3DM%28%5Cxi%5E%7Bk%7D%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%5Csum_%7Bi%7Dx_%7Bi%7D%5E%7Bk%7Dp%28%5Cxi%3Dx_%7Bi%7D%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-d.s.v.%29%5C%5C%5Cint_%7B-%5Cpropto%7D%5E%7B&plus;%5Cpropto%7Dx%5E%7Bk%7Df_%7B%5Cxi%7D%28x%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-n.s.v.%29%5Cend%7Bmatrix%7D%5Cright.)
 
 
 ![](https://latex.codecogs.com/gif.latex?%5Cbeta_%7Bk%7D%5Cxi%3DM%28%5Cxi-M_%7B%5Cxi%7D%29%5E%7Bk%7D%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%5Csum_%7Bi%7D%28x_%7Bi%7D-M_%7B%5Cxi%7D%29%5E%7Bk%7Dp%28%5Cxi%3Dx_%7Bi%7D%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-d.s.v.%29%5C%5C%5Cint_%7B-%5Cpropto%7D%5E%7B&plus;%5Cpropto%7D%28x-M_%7B%5Cxi%7D%29%5E%7Bk%7Df_%7B%5Cxi%7D%28x%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-n.s.v.%29%5Cend%7Bmatrix%7D%5Cright.) 
