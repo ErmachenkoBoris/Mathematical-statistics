@@ -13,7 +13,7 @@
 
 Произведем n измерений этой случайной величины
 
-|  ![](https://latex.codecogs.com/svg.latex?\x_{i}) |  ![](https://latex.codecogs.com/svg.latex?\x_{1}) |  ![](https://latex.codecogs.com/svg.latex?\x_{2}) | ...  |  ![](https://latex.codecogs.com/svg.latex?\x_{n}) |
+|  ![](https://latex.codecogs.com/svg.latex?x_{i}) |  ![](https://latex.codecogs.com/svg.latex?x_{1}) |  ![](https://latex.codecogs.com/svg.latex?x_{2}) | ...  |  ![](https://latex.codecogs.com/svg.latex?x_{n}) |
 |---|---|---|---|---|
 |   |   |   |   |   |
 |   |   |   |   |   |
