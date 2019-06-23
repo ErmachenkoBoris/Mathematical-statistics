@@ -15,5 +15,28 @@
 
 | ![](https://latex.codecogs.com/svg.latex?(y_{i};y_{i&plus;1}))  | ![](https://latex.codecogs.com/svg.latex?[y_{1};y_{2}))  |  ![](https://latex.codecogs.com/svg.latex?[y_{2};y_{3})) | ...  |  ![](https://latex.codecogs.com/svg.latex?(y_{k};y_{k&plus;1})) |
 |---|---|---|---|---|
-| ![](https://latex.codecogs.com/svg.latex?l_{i}))  |  ![](https://latex.codecogs.com/svg.latex?l_{1})) | ![](https://latex.codecogs.com/svg.latex?l_{2}))  | ...  |  ![](https://latex.codecogs.com/svg.latex?l_{k})) |
+| ![](https://latex.codecogs.com/svg.latex?l_{i})  |  ![](https://latex.codecogs.com/svg.latex?l_{1}) | ![](https://latex.codecogs.com/svg.latex?l_{2})  | ...  |  ![](https://latex.codecogs.com/svg.latex?l_{k}) |
 
+![](https://latex.codecogs.com/svg.latex?l_{i}) - число точек, попавших в разряд
+
+![](https://latex.codecogs.com/svg.latex?\sum_{i=1}^{k}l_{i}=n)
+
+На практике берем 3-4 разряда
+
+В этом случае взяли k разрядов
+
+Рассмотрим случайную величину ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{(l_{i}-np_{i})^2}{np_{i}})
+
+Используя данные нашей таблички подставим ![](https://latex.codecogs.com/svg.latex?l_{i})  и вычислим R наблюдаемое. Где k - число разрядов, которые мы выбрали сами.
+
+n - число выборки
+
+![](https://latex.codecogs.com/svg.latex?p_{i})  - вероятность, что ![](https://latex.codecogs.com/svg.latex?\xi_{i}) (??) попадет в i-ый разряд
+
+![](https://latex.codecogs.com/svg.latex?P_{i}=P(\xi&space;\in&space;[y_{i},y_{i&plus;1})&space;)=F_{\xi}(y_{i&plus;1})-F_{\xi}(y_{i}))
+
+Вычисляется согласно гипотезе ![](https://latex.codecogs.com/svg.latex?H_{0})
+
+r - число степеней свобод - считается также как и с д.с.в.
+
+Остальное считается также как и с д.с.в.
