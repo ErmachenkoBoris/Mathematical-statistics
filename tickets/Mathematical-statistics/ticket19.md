@@ -11,5 +11,9 @@
 
 2) Рассмотрим случай, когда ![](https://latex.codecogs.com/svg.latex?\xi) - непрерывная случайная величина. (перый случай в предыдущем билете)
 
+Получим n значений этой случайной величины ![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},...,x_{n}). Т.к. ![](https://latex.codecogs.com/svg.latex?\xi) - непрерывная, то вообще говоря одинаковых среди них быть не должно. Для того, чтобы применить критерий нужно обязательно построить группирированный ряд:
 
+| https://latex.codecogs.com/svg.latex?(y_{i};y_{i&plus;1})  | https://latex.codecogs.com/svg.latex?[y_{1};y_{2})  |  https://latex.codecogs.com/svg.latex?[y_{2};y_{3}) | ...  |  https://latex.codecogs.com/svg.latex?(y_{k};y_{k&plus;1}) |
+|---|---|---|---|---|
+| (https://latex.codecogs.com/svg.latex?l_{i})  |  (https://latex.codecogs.com/svg.latex?l_{1}) | (https://latex.codecogs.com/svg.latex?l_{2})  | ...  |  (https://latex.codecogs.com/svg.latex?l_{k}) |
 
