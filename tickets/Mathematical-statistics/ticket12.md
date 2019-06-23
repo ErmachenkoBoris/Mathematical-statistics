@@ -3,8 +3,10 @@
 #### Теоретические моменты
 
 ![](https://latex.codecogs.com/gif.latex?\alpha&space;_{k}\xi&space;=&space;M&space;(\xi&space;^{k})=\left\{\begin{matrix}&space;\sum_{i}x_{i}^{k}p(\xi&space;=&space;x_{i},&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;d.s.v.)\\&space;\int_{-\propto&space;}^{&plus;\propto&space;}x^{k}f_{\xi&space;}(x,&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;n.s.v.)&space;\end{matrix}\right.)
+(тут фигурная скобка)
 
-![](https://latex.codecogs.com/gif.latex?\beta&space;_{k}\xi&space;=&space;M&space;(\xi-M_{\xi})&space;^{k}=\left\{\begin{matrix}&space;\sum_{i}(x_{i}-M_{\xi})^{k}p(\xi&space;=&space;x_{i},&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;d.s.v.)\\&space;\int_{-\propto&space;}^{&plus;\propto&space;}(x-M_{\xi&space;})^{k}f_{\xi&space;}(x,&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;n.s.v.)&space;\end{matrix}\right.)
+![](https://latex.codecogs.com/gif.latex?\beta&space;_{k}\xi&space;=&space;M&space;(\xi-M_{\xi})&space;^{k}=\left\{\begin{matrix}&space;\sum_{i}(x_{i}-M_{\xi})^{k}p(\xi&space;=&space;x_{i},&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;d.s.v.)\\&space;\int_{-\propto&space;}^{&plus;\propto&space;}(x-M_{\xi&space;})^{k}f_{\xi&space;}(x,&space;a_{1},&space;a_{2},...,&space;a_{n},&space;esly&space;\xi&space;-&space;n.s.v.)&space;\end{matrix}\right.) 
+(тут фигурная скобка)
 
 Записывают так :
 
