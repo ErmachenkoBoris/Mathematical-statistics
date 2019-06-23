@@ -19,7 +19,7 @@
   ![](https://latex.codecogs.com/svg.latex?P(a&space;\leqslant&space;\xi_1<b,&space;c&space;\leqslant&space;\xi_2<d)=F(b,d)&plus;F(a,c)-F(b,c)-F(a,d))
 
 ### Замечание
-Если ![](https://latex.codecogs.com/svg.latex?(\xi_1,\xi_2)) непрервного типа, то:
+Если ![](https://latex.codecogs.com/svg.latex?(\xi_1,\xi_2)) непрерывного типа, то:
 - Функция F(x,y) также непрерывна справа по каждому своему аргументу, т.е. является просто непрерывной функцией и по x, и по y.
 - Вероятность попадания в прямоугольник будет вычисляться независимо от того, как стоят знаки.
 
