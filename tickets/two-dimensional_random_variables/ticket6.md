@@ -23,4 +23,8 @@
 
 ![](https://latex.codecogs.com/svg.latex?P(\xi_1=x_i/\xi_2=y_j)=\frac{P(\xi_1=x_1;\xi_2=y_j)}{P(\xi_2=y_j)}), где верхняя часть равна![](https://latex.codecogs.com/svg.latex?P_{ij}) в матрицы, а нижняя находится с помощью той же матрицы.
 
+### Замечание
+
+Для того, чтобы найти матрицу распределения для 2 дискретных с.в., нужно знать безусловный закон распределения для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) и все условные законы распределения для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}).
+
 ## Примеров нет, импровизируйте.
