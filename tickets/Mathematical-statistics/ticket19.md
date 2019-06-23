@@ -15,5 +15,5 @@
 
 | ![](https://latex.codecogs.com/svg.latex?(y_{i};y_{i&plus;1}))  | ![](https://latex.codecogs.com/svg.latex?[y_{1};y_{2}))  |  ![](https://latex.codecogs.com/svg.latex?[y_{2};y_{3})) | ...  |  ![](https://latex.codecogs.com/svg.latex?(y_{k};y_{k&plus;1})) |
 |---|---|---|---|---|
-| ![]((https://latex.codecogs.com/svg.latex?l_{i}))  |  ![]((https://latex.codecogs.com/svg.latex?l_{1})) | ![]((https://latex.codecogs.com/svg.latex?l_{2}))  | ...  |  ![]((https://latex.codecogs.com/svg.latex?l_{k})) |
+| ![](https://latex.codecogs.com/svg.latex?l_{i}))  |  ![](https://latex.codecogs.com/svg.latex?l_{1})) | ![](https://latex.codecogs.com/svg.latex?l_{2}))  | ...  |  ![](https://latex.codecogs.com/svg.latex?l_{k})) |
 
