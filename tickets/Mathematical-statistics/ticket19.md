@@ -33,7 +33,7 @@ n - число выборки
 
 ![](https://latex.codecogs.com/svg.latex?p_{i})  - вероятность, что ![](https://latex.codecogs.com/svg.latex?\xi_{i}) (??) попадет в i-ый разряд
 
-![](https://latex.codecogs.com/svg.latex?P_{i}=P(\xi&space;\in&space;[y_{i},y_{i&plus;1})&space;)=F_{\xi}(y_{i&plus;1})-F_{\xi}(y_{i}))
+![](https://latex.codecogs.com/svg.latex?P_{i}=P&space;\left&space;(&space;\xi&space;\in&space;[y_{i},y_{i&plus;1})&space;\right&space;)=F_{\xi}(y_{i&plus;1})-F_{\xi}(y_{i}))
 
 Вычисляется согласно гипотезе ![](https://latex.codecogs.com/svg.latex?H_{0})
 
