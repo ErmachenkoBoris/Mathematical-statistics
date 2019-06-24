@@ -30,7 +30,7 @@
 2. **Понятие состоятельности оценки**
 Говорят, что последовательность ![](https://latex.codecogs.com/svg.latex?\xi_{1},\xi_{2},...,\xi_{n}) сходится по вероятности к неслучайной величине А, если при ![](https://latex.codecogs.com/svg.latex?n\rightarrow\infty), ![](https://latex.codecogs.com/svg.latex?\forall\varepsilon>0)
 
-последняя из вероятностей
+последовательность из вероятностей
 ![](https://latex.codecogs.com/svg.latex?P(|\xi_{1}-A|<\varepsilon),P(|\xi_{2}-A|<\varepsilon),...,P(|\xi_{n}-A|<\varepsilon)\rightarrow1)
 
 ![](https://latex.codecogs.com/svg.latex?\lim_{n\rightarrow\infty}P(|\xi_{n}-A|<\varepsilon)=1)
