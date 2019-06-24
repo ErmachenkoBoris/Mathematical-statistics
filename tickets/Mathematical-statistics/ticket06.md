@@ -66,7 +66,7 @@ ___
 
 2. Если оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является состоятельной для параметра a, то для любой непрерывной функции g, оценка ![](https://latex.codecogs.com/svg.latex?g(\widetilde{a})) будет состоятельной для параметра g(a).
 
-3. Пусть ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является состоятельной для параметра a и ![](https://latex.codecogs.com/svg.latex?D(\widetilde{a})\underset{n\rightarrow\infty}{\rightarrow}0), тогда оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) будет состоятельной для параметра a.
+3. Пусть ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является несмещенной оценкой для параметра a и ![](https://latex.codecogs.com/svg.latex?D(\widetilde{a})\underset{n\rightarrow\infty}{\rightarrow}0), тогда оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) будет состоятельной для параметра a.
 ___
 3. Понятие **Эффективности** оценки в множестве оценок
 Предположим, что для
