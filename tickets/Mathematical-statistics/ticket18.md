@@ -26,9 +26,9 @@
 
 ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}C_{i}(p_{i}^{*}-p_{i})^2)
 
-![](https://latex.codecogs.com/svg.latex?С_{i}) - веса, константы
+![](https://latex.codecogs.com/svg.latex?C_{i}) - веса, константы
 
-Пирстон предложил в качестве ![](https://latex.codecogs.com/svg.latex?С_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
+Пирстон предложил в качестве ![](https://latex.codecogs.com/svg.latex?C_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
 
 ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{n}{p_{i}}\cdot&space;C_{i}(p_{i}^{*}-p_{i})^2&space;=&space;...&space;=\sum_{i=1}^{k}\frac{(n_{i}-np_{i})^2}{np_{i}})
 
