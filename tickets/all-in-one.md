@@ -70,7 +70,7 @@
   - ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;&plus;\infty,&space;\forall&space;y-fixed}F(x,y)=&space;F(&plus;\infty,&space;y)=P(\xi_{1}<&plus;\infty,&space;\xi_{2}<y)=P(\xi_{2}<y)=F_{\xi_{2}}(y))
   - ![](https://latex.codecogs.com/svg.latex?\lim_{\forall&space;x-fixed,&space;y\rightarrow&space;&plus;\infty}F(x,y)=&space;F(x,&plus;\infty)=P(\xi{1}<x,\xi_{2}<&plus;\infty)=P(\xi_{1}<x)=F_{\xi_{1}}(x))
 - Вероятность попадания с.в. ![](https://latex.codecogs.com/svg.latex?(\xi_1,\xi_2)) в прямоугольник
-  ![](../../images/two-dimensional_random_variables/ticket2-1.png)
+  ![](../images/two-dimensional_random_variables/ticket2-1.png)
   ![](https://latex.codecogs.com/svg.latex?a&space;\leqslant&space;x<b,&space;c&space;\leqslant&space;y<d)
   ![](https://latex.codecogs.com/svg.latex?P(a&space;\leqslant&space;\xi_1<b,&space;c&space;\leqslant&space;\xi_2<d)=F(b,d)&plus;F(a,c)-F(b,c)-F(a,d))
 
@@ -135,7 +135,7 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 
 2. Нарисуем на плоскости и рассмотрим прямоугольник D
 
-![](../../images/two-dimensional_random_variables/ticket4-1.png)
+![](../images/two-dimensional_random_variables/ticket4-1.png)
 
 ![](https://latex.codecogs.com/svg.latex?D%3D%5C%7B%28U%2CV%29%3AU%3Cx%2C%20V%3Cy%20%5C%7D)
 
@@ -224,14 +224,14 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 
 ## Пример
 
-![](../../images/two-dimensional_random_variables/ticket7-1.jpg)
+![](../images/two-dimensional_random_variables/ticket7-1.jpg)
 # 8. Основные числовые характеристики двумерной с.в. и формулы для нахождения центра рассеивания, величины разброса по осям, ковариации и корреляционной матрицы.
 
 ## Центр разброса (рассеивания)
 
 Точка на плоскости с координатами ![](https://latex.codecogs.com/svg.latex?(M\xi_1,M\xi_2))
 
-![](../../images/two-dimensional_random_variables/ticket8-1.png)
+![](../images/two-dimensional_random_variables/ticket8-1.png)
 
 ## Величина разброса
 
@@ -417,7 +417,7 @@ V - выборка, n - объем выборки.
 Расположим данные на оси.
 Разобьем интервал от ![](https://latex.codecogs.com/svg.latex?x_{1}) до ![](https://latex.codecogs.com/svg.latex?x_{k}) на разряды по S штук
 
-![](../../images/Mathematical-statistics/ticket03.png)
+![](../images/Mathematical-statistics/ticket03.png)
 
 ![](https://latex.codecogs.com/svg.latex?y_{1}<y_{2}<...<y_{s}<y_{s&plus;1})
 
@@ -463,7 +463,7 @@ m(x) - число элементов выборки которые строго 
 
 _________
 Пусть ξ – Д.С.В.
-![](../../images/Mathematical-statistics/ticket04-1.png)
+![](../images/Mathematical-statistics/ticket04-1.png)
 
 Многоугольник распределения
 
@@ -491,7 +491,7 @@ f(x) - плотность
 
 ![](https://latex.codecogs.com/svg.latex?\Delta&space;i=y_{i&plus;1}-y_{i}) - длинна i-го разряда
 
-![](../../images/Mathematical-statistics/ticket04-2.png)
+![](../images/Mathematical-statistics/ticket04-2.png)
 
 Площадь этой фигуры = 1
 # 5. Статистические аналоги для математического ожидания, дисперсии, начальных и центральных моментов. Формулы для их вычисления в зависимости от способа представления данных.
@@ -663,7 +663,7 @@ n = 1, 2, ...,
 
 ![](https://latex.codecogs.com/svg.latex?\Phi(x)=\frac{2}{\sqrt{2\pi}}*\int_{0}^{x}e^{-\frac{t^{2}}{2}}dt)
 
-![](../../images/Mathematical-statistics/ticket08.png)
+![](../images/Mathematical-statistics/ticket08.png)
 
 * Для того чтобы увеличить гамму, из графика видно, что нужно увеличить аргумент X.
 Если ε задана, Dξ = const, то существует единственный способ - увеличение n.
