@@ -41,7 +41,7 @@
 
 Пусть случайные величины ![](https://latex.codecogs.com/svg.latex?\xi_{1},&space;\xi_{2},&space;...,&space;\xi_{r}) являются независимыми и все они имеют стандартное нормальное распределение
 
-![](https://latex.codecogs.com/svg.latex?\chi&space;=&space;\sum_{i=1}^{r}\xi&space;^{2}_{i})
+![](https://latex.codecogs.com/svg.latex?\chi_{r}^{2}&space;=&space;\sum_{i=1}^{r}\xi&space;^{2}_{i})
 
 (2 - это не квадрат, а обозначение)
 
