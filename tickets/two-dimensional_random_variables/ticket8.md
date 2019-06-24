@@ -69,7 +69,10 @@
 1. ![](https://latex.codecogs.com/svg.latex?M(\xi_1,\xi_2)=&space;M\xi_1M\xi_2&plus;cov(\xi_1,\xi_2))
 
   ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - независимы ![](https://latex.codecogs.com/svg.latex?\Rightarrow&space;M(\xi_1,\xi_2)=M\xi_1M\xi_2)
+
 2. ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - независимы ![](https://latex.codecogs.com/svg.latex?\Rightarrow&space;D(\xi_1&plus;\xi_2)=D\xi_1&plus;D\xi_2)
+
   ![](https://latex.codecogs.com/svg.latex?D%28%5Cxi_1&plus;%5Cxi_2%29%3DM%5C%7B%28%5Cxi_1&plus;%5Cxi_2-M%28%5Cxi_1&plus;%5Cxi_2%29%5E2%29%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%29&plus;%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%5E2%29&plus;2%28%5Cxi_1-M%5Cxi_1%29%28%5Cxi_2-M%5Cxi_2%29&plus;%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%5E2%29%5C%7D&plus;2M%5C%7B%28%5Cxi_1-M%5Cxi_1%29%28%5Cxi_2-M%5Cxi_2%29%5C%7D&plus;M%5C%7B%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DD%5Cxi_1&plus;D%5Cxi_2&plus;2cov%28%5Cxi_1%5C%2C%5Cxi_2%29)
 3. ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - зависимы
+
   ![](https://latex.codecogs.com/svg.latex?D(\xi_1&plus;\xi_2)=D\xi_1&plus;D\xi_2&plus;cov(\xi_1\,\xi_2))

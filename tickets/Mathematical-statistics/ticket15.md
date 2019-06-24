@@ -14,7 +14,7 @@
 
 ![](https://latex.codecogs.com/svg.latex?\tilde{a}=\tilde{M_{\xi&space;}}=\frac{1}{n}\sum_{i=1}^{n}\xi_{i})
 
-ТОгда ![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}-a&space;\right&space;|<\varepsilon&space;)=p(\left&space;|&space;\tilde{M_{\xi&space;}}&space;-&space;M_{\xi}\right&space;|<\varepsilon&space;)=...=\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{D_{\xi&space;}}})=\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sigma&space;}))
+Тогда ![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}-a&space;\right&space;|<\varepsilon&space;)=p(\left&space;|&space;\tilde{M_{\xi&space;}}&space;-&space;M_{\xi}\right&space;|<\varepsilon&space;)=...=\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sqrt{D_{\xi&space;}}})=\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sigma&space;}))
 
 ![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;\Phi&space;(\frac{\varepsilon&space;\sqrt{n}}{\sigma&space;})&space;\rightarrow&space;\varepsilon&space;-&space;?)
 
@@ -30,9 +30,7 @@
 
 ![](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^{n}\xi_{i}-&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}}<a<\frac{1}{n}\sum_{i=1}^{n}\xi_{i}&plus;&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}})
 
-Пусть задана выборка (конкретные числа)
-
-![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},..,x_{n})
+Пусть задана выборка (конкретные числа): ![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},..,x_{n})
 
 Нужно посчитать их среднее арифмитическое 
 
@@ -42,5 +40,5 @@
 
 ![](https://latex.codecogs.com/svg.latex?\bar{x}-&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}}<a<\bar{x}&plus;&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}})
 
-Замечание: полученную формулу для доверительного интервала можно использовать для любого параметра
-
+### Замечание:
+Полученную формулу для доверительного интервала можно использовать для любого параметра

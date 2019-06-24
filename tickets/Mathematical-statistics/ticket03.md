@@ -1,5 +1,5 @@
 # 3. Простой и вариационный статистические ряды. Статистическое распределение выборки. Информационно-статистическая таблица.
-Померим ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) и найдем их значения.
+Измерим ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) и найдем их значения.
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft.%5Cbegin%7Bmatrix%7D%20%5Cxi%20_%7B1%7D%5Crightarrow%20x_%7B1%7D%20%5C%5C%20%5Cxi%20_%7B2%7D%5Crightarrow%20x_%7B2%7D%20%5C%5C%20...%5C%5C%20%5Cxi%20_%7Bn%7D%5Crightarrow%20x_%7Bn%7D%20%5Cend%7Bmatrix%7D%5Cright%5C%7D) статистические данные
 
@@ -17,6 +17,7 @@
 ![](https://latex.codecogs.com/svg.latex?x_{1}\leq&space;x_{2}\leq...\leq&space;x_{n})
 
 **Вариационный ряд** - сами значения  - варианты.
+
 При наблюдении за дискретными или непрерывными случайными величинами, при округлении их значений может быть много одинаковых значений.
 Удобно из этой таблицы выделить только разные значения и посчитать сколько они встречались.
 
@@ -27,7 +28,7 @@
 | ![](https://latex.codecogs.com/svg.latex?n_{i})                     | ![](https://latex.codecogs.com/svg.latex?n_{1})      | ![](https://latex.codecogs.com/svg.latex?n_{2})      | ... | ![](https://latex.codecogs.com/svg.latex?n_{k})      |
 | ![](https://latex.codecogs.com/svg.latex?p_{i}^{*}=\frac{n_{i}}{n}) | ![](https://latex.codecogs.com/svg.latex?\frac{n_{1}}{n}) | ![](https://latex.codecogs.com/svg.latex?\frac{n_{2}}{n}) | ...    | ![](https://latex.codecogs.com/svg.latex?\frac{n_{k}}{n}) |
 
-Это статистическое распределение выборки.
+Это **статистическое распределение выборки**.
 
 ![](https://latex.codecogs.com/svg.latex?\sum_{i=1}^{k}n_{i}=n)
 
@@ -56,4 +57,4 @@
 ![](https://latex.codecogs.com/svg.latex?\sum_{i=1}^{s}L_{i}=n)
 
 Иногда разряды выбираются со спецификой задачи.
-Такая таблица называется **информационно статистической** или группированным статистическим рядом.
+Такая таблица называется **информационно статистической** или **группированным статистическим рядом**.

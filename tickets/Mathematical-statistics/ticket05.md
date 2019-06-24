@@ -24,6 +24,7 @@
 ![](https://latex.codecogs.com/svg.latex?D\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*(x_{i}-M\xi&space;^{*})^{2}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*x_{i}^{2}-(M\xi&space;^{*})^{2})
 
 3. Данные в виде информационно-статистической таблицы
+
 Используя эту таблицу строим таблицу следующего вида: для каждого разряда найдём его середину ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{i}}=\frac{y_{i}&plus;y_{i&plus;1}}{2})
 
 | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{i}}})      | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{1}})         | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{2}})    | ... | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{s}})             |
@@ -32,11 +33,11 @@
 
 ![](https://latex.codecogs.com/svg.latex?\sum_{i}^{s}l_{i}^{*}=1)
 
-![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi) - статистический аналог начального момента k-го порядка
+![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi) - статистический **аналог начального момента** k-го порядка
 
 ![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{k})
 
-![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi) - статистический аналог центрального момента k-го порядка
+![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi) - статистический **аналог центрального момента** k-го порядка
 
 ![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-\overline{x})^{k})
 

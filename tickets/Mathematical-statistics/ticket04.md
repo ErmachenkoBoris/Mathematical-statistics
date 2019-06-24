@@ -3,7 +3,7 @@
 У любой С.В. есть функция распределения
 ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=P(\xi<x),&space;x\in&space;R)
 
-![](https://latex.codecogs.com/svg.latex?F^{*}(x)) - эмпирическая/статистическая функция распределения
+![](https://latex.codecogs.com/svg.latex?F^{*}(x)) - **эмпирическая/статистическая функция распределения**
 
 ![](https://latex.codecogs.com/svg.latex?F_{n}^{*}(x)=P^{*}(\xi<x)=\frac{m(x)}{n}) 
 
@@ -11,7 +11,8 @@ n - общее количество элементов выборки
 
 m(x) - число элементов выборки которые строго меньше x
 
-**Свойства** такие же как и у F(x), график такой же как и у Д.С.В.
+**Свойства** такие же как и у F(x), график такой же как и у Д.С.В.:
+
 1. ![](https://latex.codecogs.com/svg.latex?0\leq&space;F^{*}(x)\leq&space;1)
 2. Функция является неубывающей по своему аргументу ![](https://latex.codecogs.com/svg.latex?x_{1}<x_{2}&space;\rightarrow&space;F(x_{1})\leq&space;F(x_{2}))
 3. Непрерывна слева
@@ -27,7 +28,7 @@ _________
 Пусть ξ – Д.С.В.
 ![](../../images/Mathematical-statistics/ticket04-1.png)
 
-Многоугольник распределения
+**Многоугольник распределения**
 
 ![](https://latex.codecogs.com/svg.latex?k\leq&space;n)
 
@@ -36,12 +37,14 @@ _________
 | ![](https://latex.codecogs.com/svg.latex?n_{i})                     | ![](https://latex.codecogs.com/svg.latex?n_{1})     | ![](https://latex.codecogs.com/svg.latex?n_{2})     | ... | ![](https://latex.codecogs.com/svg.latex?n_{k})     |
 | ![](https://latex.codecogs.com/svg.latex?P_{i}^{*}=\frac{n_{i}}{n}) | ![](https://latex.codecogs.com/svg.latex?P_{1}^{*}) | ![](https://latex.codecogs.com/svg.latex?P_{2}^{*}) | ... | ![](https://latex.codecogs.com/svg.latex?P_{k}^{*}) |
 
-Полигон относительных частот - статистический аналог многоугольника распределения 
+**Полигон относительных частот** - статистический аналог многоугольника распределения 
 _________
 
 Пусть ξ – непрерывная С.В.
+
 f(x) - плотность
 Эмпирическая плотность/**гистограмма** - аналог плотности.
+
 Для построения гистограммы, полученные данные нужно записать в виде информационно статистической таблицы.
 
 | Разряды           | ![](https://latex.codecogs.com/svg.latex?[y_{1},y_{2}]) | ![](https://latex.codecogs.com/svg.latex?[y_{2},y_{3}]) | ... | ![](https://latex.codecogs.com/svg.latex?[y_{s},y_{s+1}]) |

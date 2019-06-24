@@ -1,4 +1,5 @@
 # Билет 11. Оценка для вероятности: ее свойства, точность и надежность.
+
 Пусть имеется случайный эксперимент
 
 ![](https://latex.codecogs.com/svg.latex?P=P(A)=?)
@@ -56,6 +57,3 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 Задача: ![](https://latex.codecogs.com/svg.latex?\gamma&space;,&space;\varepsilon) - известны, нужно найти n. 
 
 ![](https://latex.codecogs.com/svg.latex?\gamma=0,95), то ![](https://latex.codecogs.com/svg.latex?n\approx&space;\frac{1}{\varepsilon&space;^{2}})
-
-
-###
