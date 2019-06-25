@@ -4,7 +4,7 @@
 
 ### **Свойства**:
 - ![](https://latex.codecogs.com/svg.latex?0\leqslant&space;F(x,y)\leqslant1,&space;\forall&space;x,&space;\forall&space;y)
-- Функция убывает по каждому своему аргументу
+- Функция не убывающая по каждому своему аргументу
 - Функция непрерывна слева по каждому своему аргументу
 - *Предельные свойства*
   - ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;-\infty,&space;y\rightarrow&space;-\infty}F(x,y)=&space;F(-\infty,&space;-\infty)=P(\xi_{1}<-\infty,&space;\xi_{2}<-\infty)=P(\O&space;)=0)
