@@ -543,6 +543,12 @@ f(x) - плотность
 
 ![](https://latex.codecogs.com/svg.latex?\sum_{i}^{s}l_{i}^{*}=1)
 
+Эту таблицу можно рассматривать, как ряд распределения некой С.В.
+
+![](https://latex.codecogs.com/svg.latex?M^{*}\xi=\sum_{i=1}^{s}\widetilde{y}*l_{i}^{*})
+
+![](https://latex.codecogs.com/svg.latex?D^{*}\xi=\sum_{i=1}^{s}\widetilde{y}^{2}*l_{i}^{*}-(M^{*}\xi)^{2})
+___
 ![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi) - статистический **аналог начального момента** k-го порядка
 
 ![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{k})
