@@ -28,7 +28,7 @@ __f(x,y)__ - двумерная (совместная) плотность рас
   2.1. ![](https://latex.codecogs.com/svg.latex?f(x,y)&space;\rightarrow&space;F(x,y))
   2.2. ![](https://latex.codecogs.com/svg.latex?F(x,y),f(x,y)=\frac{\partial^2&space;F(x,y)}{\partial&space;x\partial&space;y})
 
-Зная совсместную плотность, можно всегда и притом однозначно найти плотность отдельно для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) и для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2})
+Зная совместную плотность, можно всегда и притом однозначно найти плотность отдельно для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) и для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2})
 
 - ![](https://latex.codecogs.com/svg.latex?f_{\xi_1}(x)=\int_{-\infty}^{&plus;\infty}f(x,y)dy)
 - ![](https://latex.codecogs.com/svg.latex?f_{\xi_2}(y)=\int_{-\infty}^{&plus;\infty}f(x,y)dx)

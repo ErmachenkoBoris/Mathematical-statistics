@@ -4,7 +4,7 @@
 
 ![](https://latex.codecogs.com/svg.latex?(\xi_{1},&space;\xi_{2})) - двумерная случайная величина.
 
-Для того, чтобы задать двумерную дискретную случайную величину, нужно задать все ее пары, а также все вероятности ![](https://latex.codecogs.com/svg.latex?P_{ij}). Тогда говорят, что задан __Закон распределения вероятностей двумерной с.в.__
+Для того, чтобы задать двумерную дискретную случайную величину, нужно задать все ее пары, а также все вероятности ![](https://latex.codecogs.com/svg.latex?P_{ij}). Тогда говорят, что задан __Закон рапределения вероятностей двумерной с.в.__
 
 Если с.в. имеет конечное число значений, то вероятности ![](https://latex.codecogs.com/svg.latex?P_{ij}) удобно располагать в виде матрицы (__таблица распределения вероятностей__)
 
@@ -56,13 +56,13 @@
 Но если известны отдельно ряды распределения для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) и для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}), то матрицу восстановить __нельзя__, т.к. обратный переход очень сложный.
 # 2. Определение двумерной совместной функции распределения F(x,y), ее свойства.
 
-![](https://latex.codecogs.com/svg.latex?F(x,y)_{-\infty<x,y<&plus;\infty}=P(\{\xi_{1}<x&space;\}\cap&space;\{\xi_{2}<y&space;\})=P(\xi_{1}<x,\xi_{2}<y)) - совместная функция распределения
+![](https://latex.codecogs.com/svg.latex?F(x,y)_{-\infty<x,y<&plus;\infty}=P(\{\xi_{1}<x&space;\}\cap&space;\{\xi_{2}<y&space;\})=P(\xi_{1}<x,\xi_{2}<y)) - **совместная функция распределения**
 
 ### **Свойства**:
 - ![](https://latex.codecogs.com/svg.latex?0\leqslant&space;F(x,y)\leqslant1,&space;\forall&space;x,&space;\forall&space;y)
 - Функция убывает по каждому своему аргументу
 - Функция непрерывна слева по каждому своему аргументу
-- Предельные свойства
+- *Предельные свойства*
   - ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;-\infty,&space;y\rightarrow&space;-\infty}F(x,y)=&space;F(-\infty,&space;-\infty)=P(\xi_{1}<-\infty,&space;\xi_{2}<-\infty)=P(\O&space;)=0)
   - ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;-\infty,&space;\forall&space;y-fixed}F(x,y)=&space;F(-\infty,&space;y)=P(\xi_{1}<-\infty,&space;\xi_{2}<y)=P(\O&space;)=0)
   - ![](https://latex.codecogs.com/svg.latex?\lim_{\forall&space;x-fixed,&space;y\rightarrow&space;-\infty}F(x,y)=&space;F(x,-\infty)=P(\xi_{1}<x,&space;\xi_{2}<-\infty)=P(\O&space;)=0)
@@ -70,7 +70,7 @@
   - ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;&plus;\infty,&space;\forall&space;y-fixed}F(x,y)=&space;F(&plus;\infty,&space;y)=P(\xi_{1}<&plus;\infty,&space;\xi_{2}<y)=P(\xi_{2}<y)=F_{\xi_{2}}(y))
   - ![](https://latex.codecogs.com/svg.latex?\lim_{\forall&space;x-fixed,&space;y\rightarrow&space;&plus;\infty}F(x,y)=&space;F(x,&plus;\infty)=P(\xi{1}<x,\xi_{2}<&plus;\infty)=P(\xi_{1}<x)=F_{\xi_{1}}(x))
 - Вероятность попадания с.в. ![](https://latex.codecogs.com/svg.latex?(\xi_1,\xi_2)) в прямоугольник
-  ![](../images/two-dimensional_random_variables/ticket2-1.png)
+  ![](../../images/two-dimensional_random_variables/ticket2-1.png)
   ![](https://latex.codecogs.com/svg.latex?a&space;\leqslant&space;x<b,&space;c&space;\leqslant&space;y<d)
   ![](https://latex.codecogs.com/svg.latex?P(a&space;\leqslant&space;\xi_1<b,&space;c&space;\leqslant&space;\xi_2<d)=F(b,d)&plus;F(a,c)-F(b,c)-F(a,d))
 
@@ -83,31 +83,31 @@
 ![](https://latex.codecogs.com/svg.latex?F_\xi_1(x)=F_{\xi_1\xi_2}(x,&plus;\infty))
 ![](https://latex.codecogs.com/svg.latex?F_\xi_2(y)=F_{\xi_1\xi_2}(&plus;\infty,y))
 
-Зная совместную двумерную функцию распределения, можно всегда, и притом однозначно, получить функции распределения отдельно для ![](https://latex.codecogs.com/svg.latex?\xi_1) и для ![](https://latex.codecogs.com/svg.latex?\xi_2). Неверно в обратную сторону.
+Зная совместную двумерную функцию распределения, можно всегда, и притом однозначно, получить фукнции распределения отдельно для ![](https://latex.codecogs.com/svg.latex?\xi_1) и для ![](https://latex.codecogs.com/svg.latex?\xi_2). Неверно в обратную сторону.
 # 3. Способ нахождения F(x,y) из матрицы распределения для двумерной дискретной с.в.
 
 Двумерная с.в. ![](https://latex.codecogs.com/svg.latex?(\xi_1,\xi_2)) имеет распределение, заданное матрицей.
 
-| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) \ ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) | -1 | 0 | 1 |
-|----------|:------:|------:|------:|
-| -1 |  1/6 | 1/6 | 1/8 |
-| 1 | 1/4 | 1/8 | 1/6 |
+| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) \ ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) |  -1   |    0 |    1 |
+| ------------------------------------------------------------------------------------------------------------------- | :---: | ---: | ---: |
+| -1                                                                                                                  |  1/6  |  1/6 |  1/8 |
+| 1                                                                                                                   |  1/4  |  1/8 |  1/6 |
 
-| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1})  |      ![](https://latex.codecogs.com/svg.latex?x_{i})      | -1 | 0 | 1 
-|----------|:------:|------:|------:|------:|
-| |![](https://latex.codecogs.com/svg.latex?P(\xi_{1}=x_{i})) | 1/3+1/4=5/12 | 1/6+1/8=7/24 | 1/8+1/6=7/24 |
+| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) |      ![](https://latex.codecogs.com/svg.latex?x_{i})       |           -1 |            0 |            1 |
+| -------------------------------------------------------- | :--------------------------------------------------------: | -----------: | -----------: | -----------: |
+|                                                          | ![](https://latex.codecogs.com/svg.latex?P(\xi_{1}=x_{i})) | 1/6+1/4=5/12 | 1/6+1/8=7/24 | 1/8+1/6=7/24 |
 
-| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2})  |      ![](https://latex.codecogs.com/svg.latex?y_{j})      | -1 | 1 
-|----------|:------:|------:|------:|
-| |![](https://latex.codecogs.com/svg.latex?P(\xi_{2}=y_{j})) | 1/6+1/6+1/8=11/24 | 1/4+1/8+1/6=13/24 |
+| ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) |      ![](https://latex.codecogs.com/svg.latex?y_{j})       |                -1 |                 1 |
+| -------------------------------------------------------- | :--------------------------------------------------------: | ----------------: | ----------------: |
+|                                                          | ![](https://latex.codecogs.com/svg.latex?P(\xi_{2}=y_{j})) | 1/6+1/6+1/8=11/24 | 1/4+1/8+1/6=13/24 |
 
-F(x,y) удобно записывать в виде таблицы. Разобьем вс. плоскость на прямоугольники следующего вида: ось OX разобьем значениями с.в. ![](https://latex.codecogs.com/svg.latex?\xi_1), ось OY - значениями ![](https://latex.codecogs.com/svg.latex?\xi_2).
+F(x,y) удобно записывать в виде таблицы. Разобьем всю плоскость на прямоугольники следующего вида: ось OX разобьем значениями с.в. ![](https://latex.codecogs.com/svg.latex?\xi_1), ось OY - значениями ![](https://latex.codecogs.com/svg.latex?\xi_2).
 
-| y \ x       | x <= 1 | -1 < x <= 0 | 0 < x <= 1 | x > 1
-|-------------|:------:|------------:|-----------:|----:|
-| y <= -1     |  0 (1) | 0           |  0         |  0  |
-| -1 < y <= 1 | 0      | 1/6         | 1/3 (2)    |11/24|
-| y > 1       | 0      | 5/12        | 17/24      |1 (3)|
+| y \ x       | x <= 1 | -1 < x <= 0 | 0 < x <= 1 | x > 1 |
+| ----------- | :----: | ----------: | ---------: | ----: |
+| y <= -1     | 0 (1)  |           0 |          0 |     0 |
+| -1 < y <= 1 |   0    |         1/6 |    1/3 (2) | 11/24 |
+| y > 1       |   0    |        5/12 |      17/24 | 1 (3) |
 
 1) Элементы первой строки и столба всегда равны 0.
 2) Пусть x=1/2, y=0 (любые значения ихз подходящего интервала)
@@ -135,7 +135,7 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 
 2. Нарисуем на плоскости и рассмотрим прямоугольник D
 
-![](../images/two-dimensional_random_variables/ticket4-1.png)
+![](../../images/two-dimensional_random_variables/ticket4-1.png)
 
 ![](https://latex.codecogs.com/svg.latex?D%3D%5C%7B%28U%2CV%29%3AU%3Cx%2C%20V%3Cy%20%5C%7D)
 
@@ -146,7 +146,7 @@ __f(x,y)__ - двумерная (совместная) плотность рас
   2.1. ![](https://latex.codecogs.com/svg.latex?f(x,y)&space;\rightarrow&space;F(x,y))
   2.2. ![](https://latex.codecogs.com/svg.latex?F(x,y),f(x,y)=\frac{\partial^2&space;F(x,y)}{\partial&space;x\partial&space;y})
 
-Зная совместную плотность, можно всегда и притом однозначно найти плотность отдельно для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) и для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2})
+Зная совсместную плотность, можно всегда и притом однозначно найти плотность отдельно для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) и для ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2})
 
 - ![](https://latex.codecogs.com/svg.latex?f_{\xi_1}(x)=\int_{-\infty}^{&plus;\infty}f(x,y)dy)
 - ![](https://latex.codecogs.com/svg.latex?f_{\xi_2}(y)=\int_{-\infty}^{&plus;\infty}f(x,y)dx)
@@ -163,18 +163,20 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 ![](https://latex.codecogs.com/svg.latex?F_\xi_1(x)=F_{\xi_1\xi_2}(x,&plus;\infty);&space;F_\xi_2(y)=F_{\xi_1\xi_2}(&plus;\infty,y))
 
 ### Следствия
-1. Для двумерных дискретных с.в. (__Критерий независимости дискретных с.в.__)
+1. Для двумерных дискретных с.в. (__Критерий независимоссти дискретных с.в.__)
 
    ![](https://latex.codecogs.com/svg.latex?\xi_1:x_1,x_2,&space;\dots,&space;x_i,&space;\dots)
    ![](https://latex.codecogs.com/svg.latex?\xi_2:y_1,y_2,&space;\dots,&space;y_j,&space;\dots)
 
    Если ![](https://latex.codecogs.com/svg.latex?\xi_1) и ![](https://latex.codecogs.com/svg.latex?\xi_2) дискретные с.в., то для того, чтобы они были независимы, необходимо и достаточно, чтобы ![](https://latex.codecogs.com/svg.latex?\forall&space;x_i&space;\in&space;\xi_1,\forall&space;y_j&space;\in&space;\xi_2) выполнялось условие:
+
    ![](https://latex.codecogs.com/svg.latex?%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%20P_%7Bij%7D%3DP%28%5Cxi_1%3Dx_i%2C%5Cxi_2%3Dy_j%29%3DP%28%5Cxi_1%3Dx_i%29P%28%5Cxi_2%3Dy_j%29%5C%5C%20%5Cforall%20x_i%2C%5Cforall%20y_j%20%5Cend%7Bmatrix%7D%5Cright.)
 2. Для непрерывных с.в.
 
   Для того, чтобы непрерывные с.в. ![](https://latex.codecogs.com/svg.latex?\xi_1) и ![](https://latex.codecogs.com/svg.latex?\xi_2) были независимы, необходимо и достаточно:
+
   ![](https://latex.codecogs.com/svg.latex?\forall&space;x_i,\forall&space;y_j&space;\rightarrow&space;f_{\xi_1\xi_2}(x,y)=f_\xi_1(x)f_\xi_2(y))
-  # 6. Пример нахождения условных законов распределения для двух дискретных с.в.
+# 6. Пример нахождения условных законов распределения для двух дискретных с.в.
 
 Если ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) независимы, то ![](https://latex.codecogs.com/svg.latex?\xi&space;_{1}) ведет себя так, будто ![](https://latex.codecogs.com/svg.latex?\xi&space;_{2}) не существует, и наоборот.
 
@@ -224,14 +226,14 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 
 ## Пример
 
-![](../images/two-dimensional_random_variables/ticket7-1.jpg)
+![](../../images/two-dimensional_random_variables/ticket7-1.jpg)
 # 8. Основные числовые характеристики двумерной с.в. и формулы для нахождения центра рассеивания, величины разброса по осям, ковариации и корреляционной матрицы.
 
 ## Центр разброса (рассеивания)
 
 Точка на плоскости с координатами ![](https://latex.codecogs.com/svg.latex?(M\xi_1,M\xi_2))
 
-![](../images/two-dimensional_random_variables/ticket8-1.png)
+![](../../images/two-dimensional_random_variables/ticket8-1.png)
 
 ## Величина разброса
 
@@ -296,9 +298,12 @@ __f(x,y)__ - двумерная (совместная) плотность рас
 1. ![](https://latex.codecogs.com/svg.latex?M(\xi_1,\xi_2)=&space;M\xi_1M\xi_2&plus;cov(\xi_1,\xi_2))
 
   ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - независимы ![](https://latex.codecogs.com/svg.latex?\Rightarrow&space;M(\xi_1,\xi_2)=M\xi_1M\xi_2)
+
 2. ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - независимы ![](https://latex.codecogs.com/svg.latex?\Rightarrow&space;D(\xi_1&plus;\xi_2)=D\xi_1&plus;D\xi_2)
+
   ![](https://latex.codecogs.com/svg.latex?D%28%5Cxi_1&plus;%5Cxi_2%29%3DM%5C%7B%28%5Cxi_1&plus;%5Cxi_2-M%28%5Cxi_1&plus;%5Cxi_2%29%5E2%29%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%29&plus;%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%5E2%29&plus;2%28%5Cxi_1-M%5Cxi_1%29%28%5Cxi_2-M%5Cxi_2%29&plus;%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DM%5C%7B%28%5Cxi_1-m%5Cxi_1%5E2%29%5C%7D&plus;2M%5C%7B%28%5Cxi_1-M%5Cxi_1%29%28%5Cxi_2-M%5Cxi_2%29%5C%7D&plus;M%5C%7B%28%5Cxi_2-M%5Cxi_2%29%5E2%5C%7D%3DD%5Cxi_1&plus;D%5Cxi_2&plus;2cov%28%5Cxi_1%5C%2C%5Cxi_2%29)
 3. ![](https://latex.codecogs.com/svg.latex?\xi_1,\xi_2) - зависимы
+
   ![](https://latex.codecogs.com/svg.latex?D(\xi_1&plus;\xi_2)=D\xi_1&plus;D\xi_2&plus;cov(\xi_1\,\xi_2))
 # 9. Свойства корреляции двух с.в.
 
@@ -338,47 +343,52 @@ ___
 ___
 ___
 ___
-  # **МАТЕМАТИЧЕСКАЯ СТАТИСТИКА**
+# **МАТЕМАТИЧЕСКАЯ СТАТИСТИКА**
 # 1. Предмет математической статистики. Специфика ее задач по сравнению c задачами теории вероятностей. Три основные задачи математической статистики.
-Математическая статистика - раздел Теории вероятностей, котором разрабатываются приемы и методы сбор, обработки и анализа эксперементальных данных с целью построения на основе этих данных адекватной вероятностной модели изучаемого случайного явления.
+**Математическая статистика** - раздел Теории вероятностей, в котором разрабатываются приемы и методы сбора, обработки и анализа экспериментальных данных с целью построения на основе этих данных адекватной вероятностной модели изучаемого случайного явления.
 
 Математическая статистика имеет очень большую область практического применения. Она выделяется в отдельный раздел так как решает специфические задачи по сравнению с теми что решает Теория Вероятности. Их можно назвать обратными к задачам Теории вероятности.
 
 |      | Имеем                                                | Рассчитываем                                                |
-|------|------------------------------------------------------|------------------------------------------------------------|
+| ---- | ---------------------------------------------------- | ---------------------------------------------------------- |
 | Т.В. | Вероятностная модель. Вероятность случайного события | Реальное течение процесса.  Частота происхождения процесса |
 | М.С. | Реальные числовые данные                             | Подходящую адекватную вероятностную модель                 |
 
 Основные типы задач решаемые В математической статистике:
+
 1. Нахождение статистических законов распределения и статистических числовых характеристик
 2. Оценивание неизвестных параметров распределения по статистическим данным
 3. Проверка тех или иных предположений о законах распределения или параметрах этого распределения. Проверка статистических гипотез.
 # 2. Понятие генеральной совокупности и выборки. Независимая выборка.
-Генеральная совокупность ![](https://latex.codecogs.com/svg.latex?\Gamma) - множество элементов одинаковой физической природы для которых изучаются свойства некоторого их количественного признака.
-N - количество элементов, объем ![](https://latex.codecogs.com/svg.latex?\Gamma)
+**Генеральная совокупность** ![](https://latex.codecogs.com/svg.latex?\Gamma) - множество элементов одинаковой физической природы для которых изучаются свойства некоторого их количественного признака.
+N - **количество элементов**, объем ![](https://latex.codecogs.com/svg.latex?\Gamma)
 
 Количественный признак ![](https://latex.codecogs.com/svg.latex?\Gamma) - случайная величина.
 
 Выберем из ![](https://latex.codecogs.com/svg.latex?\Gamma) определенным образом n элементов.
-V - выборка, n - объем выборки.
+V - **выборка**, n - **объем выборки**.
+
 Обозначим количественные признаки:
 Для первого элемента ![](https://latex.codecogs.com/svg.latex?\xi_{1})
 Для второго элемента ![](https://latex.codecogs.com/svg.latex?\xi_{2})
 ...
 Для n-го элемента ![](https://latex.codecogs.com/svg.latex?\xi_{n})
+
 ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) - это не новые случайные величины, а переобозначенная ![](https://latex.codecogs.com/svg.latex?\xi) (Экземпляр С.В.)
 
-Все ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) одинаково распределены, так же как и ![](https://latex.codecogs.com/svg.latex?\xi) => одинаковые числовые характеристики.
+Все ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) одинаково распределены, так же как и ![](https://latex.codecogs.com/svg.latex?\xi\Rightarrow) одинаковые числовые характеристики.
 
-Основное правило получения выборки:
+### Основное правило получения выборки:
 * Каждый элемент генеральной совокупности должен иметь равное право попасть в выборку.
 
 Выборка должна быть репрезентативной **(адекватно представлять генеральную совокупность)**
 Это правило обеспечивает независимость всех С.В. ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n})
+
 Независимые, одинаково распределенные и упорядоченные С.В. ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) называются **повторной выборкой** объема n из ![](https://latex.codecogs.com/svg.latex?\Gamma).
+
 Будем использовать только ее. (![](https://latex.codecogs.com/svg.latex?n\ll&space;N))
 # 3. Простой и вариационный статистические ряды. Статистическое распределение выборки. Информационно-статистическая таблица.
-Померим ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) и найдем их значения.
+Измерим ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n}) и найдем их значения.
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft.%5Cbegin%7Bmatrix%7D%20%5Cxi%20_%7B1%7D%5Crightarrow%20x_%7B1%7D%20%5C%5C%20%5Cxi%20_%7B2%7D%5Crightarrow%20x_%7B2%7D%20%5C%5C%20...%5C%5C%20%5Cxi%20_%7Bn%7D%5Crightarrow%20x_%7Bn%7D%20%5Cend%7Bmatrix%7D%5Cright%5C%7D) статистические данные
 
@@ -396,6 +406,7 @@ V - выборка, n - объем выборки.
 ![](https://latex.codecogs.com/svg.latex?x_{1}\leq&space;x_{2}\leq...\leq&space;x_{n})
 
 **Вариационный ряд** - сами значения  - варианты.
+
 При наблюдении за дискретными или непрерывными случайными величинами, при округлении их значений может быть много одинаковых значений.
 Удобно из этой таблицы выделить только разные значения и посчитать сколько они встречались.
 
@@ -406,7 +417,7 @@ V - выборка, n - объем выборки.
 | ![](https://latex.codecogs.com/svg.latex?n_{i})                     | ![](https://latex.codecogs.com/svg.latex?n_{1})      | ![](https://latex.codecogs.com/svg.latex?n_{2})      | ... | ![](https://latex.codecogs.com/svg.latex?n_{k})      |
 | ![](https://latex.codecogs.com/svg.latex?p_{i}^{*}=\frac{n_{i}}{n}) | ![](https://latex.codecogs.com/svg.latex?\frac{n_{1}}{n}) | ![](https://latex.codecogs.com/svg.latex?\frac{n_{2}}{n}) | ...    | ![](https://latex.codecogs.com/svg.latex?\frac{n_{k}}{n}) |
 
-Это статистическое распределение выборки.
+Это **статистическое распределение выборки**.
 
 ![](https://latex.codecogs.com/svg.latex?\sum_{i=1}^{k}n_{i}=n)
 
@@ -417,7 +428,7 @@ V - выборка, n - объем выборки.
 Расположим данные на оси.
 Разобьем интервал от ![](https://latex.codecogs.com/svg.latex?x_{1}) до ![](https://latex.codecogs.com/svg.latex?x_{k}) на разряды по S штук
 
-![](../images/Mathematical-statistics/ticket03.png)
+![](../../images/Mathematical-statistics/ticket03.png)
 
 ![](https://latex.codecogs.com/svg.latex?y_{1}<y_{2}<...<y_{s}<y_{s&plus;1})
 
@@ -435,13 +446,13 @@ V - выборка, n - объем выборки.
 ![](https://latex.codecogs.com/svg.latex?\sum_{i=1}^{s}L_{i}=n)
 
 Иногда разряды выбираются со спецификой задачи.
-Такая таблица называется **информационно статистической** или группированным статистическим рядом.
+Такая таблица называется **информационно статистической** или **группированным статистическим рядом**.
 # 4. Эмпирическая функция распределения, ее свойства. Полигон относительных частот и гистограмма.
 
 У любой С.В. есть функция распределения
 ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=P(\xi<x),&space;x\in&space;R)
 
-![](https://latex.codecogs.com/svg.latex?F^{*}(x)) - эмпирическая/статистическая функция распределения
+![](https://latex.codecogs.com/svg.latex?F^{*}(x)) - **эмпирическая/статистическая функция распределения**
 
 ![](https://latex.codecogs.com/svg.latex?F_{n}^{*}(x)=P^{*}(\xi<x)=\frac{m(x)}{n}) 
 
@@ -449,7 +460,8 @@ n - общее количество элементов выборки
 
 m(x) - число элементов выборки которые строго меньше x
 
-**Свойства** такие же как и у F(x), график такой же как и у Д.С.В.
+**Свойства** такие же как и у F(x), график такой же как и у Д.С.В.:
+
 1. ![](https://latex.codecogs.com/svg.latex?0\leq&space;F^{*}(x)\leq&space;1)
 2. Функция является неубывающей по своему аргументу ![](https://latex.codecogs.com/svg.latex?x_{1}<x_{2}&space;\rightarrow&space;F(x_{1})\leq&space;F(x_{2}))
 3. Непрерывна слева
@@ -463,9 +475,9 @@ m(x) - число элементов выборки которые строго 
 
 _________
 Пусть ξ – Д.С.В.
-![](../images/Mathematical-statistics/ticket04-1.png)
+![](../../images/Mathematical-statistics/ticket04-1.png)
 
-Многоугольник распределения
+**Многоугольник распределения**
 
 ![](https://latex.codecogs.com/svg.latex?k\leq&space;n)
 
@@ -474,12 +486,14 @@ _________
 | ![](https://latex.codecogs.com/svg.latex?n_{i})                     | ![](https://latex.codecogs.com/svg.latex?n_{1})     | ![](https://latex.codecogs.com/svg.latex?n_{2})     | ... | ![](https://latex.codecogs.com/svg.latex?n_{k})     |
 | ![](https://latex.codecogs.com/svg.latex?P_{i}^{*}=\frac{n_{i}}{n}) | ![](https://latex.codecogs.com/svg.latex?P_{1}^{*}) | ![](https://latex.codecogs.com/svg.latex?P_{2}^{*}) | ... | ![](https://latex.codecogs.com/svg.latex?P_{k}^{*}) |
 
-Полигон относительных частот - статистический аналог многоугольника распределения 
+**Полигон относительных частот** - статистический аналог многоугольника распределения 
 _________
 
 Пусть ξ – непрерывная С.В.
+
 f(x) - плотность
 Эмпирическая плотность/**гистограмма** - аналог плотности.
+
 Для построения гистограммы, полученные данные нужно записать в виде информационно статистической таблицы.
 
 | Разряды           | ![](https://latex.codecogs.com/svg.latex?[y_{1},y_{2}]) | ![](https://latex.codecogs.com/svg.latex?[y_{2},y_{3}]) | ... | ![](https://latex.codecogs.com/svg.latex?[y_{s},y_{s+1}]) |
@@ -491,7 +505,7 @@ f(x) - плотность
 
 ![](https://latex.codecogs.com/svg.latex?\Delta&space;i=y_{i&plus;1}-y_{i}) - длинна i-го разряда
 
-![](../images/Mathematical-statistics/ticket04-2.png)
+![](../../images/Mathematical-statistics/ticket04-2.png)
 
 Площадь этой фигуры = 1
 # 5. Статистические аналоги для математического ожидания, дисперсии, начальных и центральных моментов. Формулы для их вычисления в зависимости от способа представления данных.
@@ -520,6 +534,7 @@ f(x) - плотность
 ![](https://latex.codecogs.com/svg.latex?D\xi&space;^{*}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*(x_{i}-M\xi&space;^{*})^{2}=\frac{1}{n}\sum_{i=1}^{k}n_{i}*x_{i}^{2}-(M\xi&space;^{*})^{2})
 
 3. Данные в виде информационно-статистической таблицы
+
 Используя эту таблицу строим таблицу следующего вида: для каждого разряда найдём его середину ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{i}}=\frac{y_{i}&plus;y_{i&plus;1}}{2})
 
 | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{i}}})      | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{1}})         | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{2}})    | ... | ![](https://latex.codecogs.com/svg.latex?\widetilde{y_{s}})             |
@@ -528,11 +543,11 @@ f(x) - плотность
 
 ![](https://latex.codecogs.com/svg.latex?\sum_{i}^{s}l_{i}^{*}=1)
 
-![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi) - статистический аналог начального момента k-го порядка
+![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi) - статистический **аналог начального момента** k-го порядка
 
 ![](https://latex.codecogs.com/svg.latex?\alpha_{k}^{*}\xi=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{k})
 
-![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi) - статистический аналог центрального момента k-го порядка
+![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi) - статистический **аналог центрального момента** k-го порядка
 
 ![](https://latex.codecogs.com/svg.latex?\beta_{k}^{*}\xi=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-\overline{x})^{k})
 
@@ -545,9 +560,10 @@ f(x) - плотность
 
 С помощью методов математической статистики найти параметры нельзя. Можно только оценки для этих параметров.
 Выберем из генеральной совокупности n элементов и получим n экземпляров
+
 ![](https://latex.codecogs.com/svg.latex?\xi_{1}),...,![](https://latex.codecogs.com/svg.latex?\xi_{n})
 
-Оценка ![](https://latex.codecogs.com/svg.latex?a_{1}) - ![](https://latex.codecogs.com/svg.latex?\widetilde{a_{1}}=\varphi_{1}(\xi_{1},\xi_{2},...,\xi_{n}))
+**Оценка** ![](https://latex.codecogs.com/svg.latex?a_{1}) - ![](https://latex.codecogs.com/svg.latex?\widetilde{a_{1}}=\varphi_{1}(\xi_{1},\xi_{2},...,\xi_{n}))
 
 ![](https://latex.codecogs.com/svg.latex?\widetilde{a_{2}}=\varphi_{2}(\xi_{1},\xi_{2},...,\xi_{n}))
 
@@ -559,14 +575,13 @@ f(x) - плотность
 
 ### Требования к оценкам
 1. **Понятие несмещенности оценки**
+
 ![](https://latex.codecogs.com/svg.latex?a\rightarrow\widetilde{a}=\varphi(\xi_{1},\xi_{2},...,\xi_{n}))
 
-Если для любого n=1,2,...,
-
-![](https://latex.codecogs.com/svg.latex?M(\widetilde{a})=a)
-, то оценка называется несмещенной.
+Если для любого n=1,2,..., ![](https://latex.codecogs.com/svg.latex?M(\widetilde{a})=a), то оценка называется **несмещенной**.
 
 2. **Понятие состоятельности оценки**
+
 Говорят, что последовательность ![](https://latex.codecogs.com/svg.latex?\xi_{1},\xi_{2},...,\xi_{n}) сходится по вероятности к неслучайной величине А, если при ![](https://latex.codecogs.com/svg.latex?n\rightarrow\infty), ![](https://latex.codecogs.com/svg.latex?\forall\varepsilon>0)
 
 последовательность из вероятностей
@@ -584,15 +599,13 @@ f(x) - плотность
 
 При изменении n от 1 до бесконечности, возникает последовательность оценок ![](https://latex.codecogs.com/svg.latex?\widetilde{a_{1}},\widetilde{a_{2}},...,\widetilde{a_{n}})
 Если эта последовательность сходится по вероятности к а
-
 ![](https://latex.codecogs.com/svg.latex?\widetilde{a_{n}}\xrightarrow[n\rightarrow\infty]{P}a)
-
-, то построенная оценка называется состоятельной
+, то построенная оценка называется **состоятельной**
 
 ___
-На практике используются 3 теоремы состоятельности.
+На практике используются 3 **теоремы состоятельности**:
 
-1. **Теорема Чебышева**
+- **Теорема Чебышева**
 ![](https://latex.codecogs.com/svg.latex?\xi_{1},\xi_{2},...,\xi_{n}) - последовательность, имеющая одинаковые С.В.
 
 ![](https://latex.codecogs.com/svg.latex?M\xi_{i}=m,D\xi_{i}=d,&space;i=1,2,...,)
@@ -603,26 +616,30 @@ ___
 
 ![](https://latex.codecogs.com/svg.latex?\xrightarrow[n\rightarrow\infty]{P}m)
 
-2. Если оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является состоятельной для параметра a, то для любой непрерывной функции g, оценка ![](https://latex.codecogs.com/svg.latex?g(\widetilde{a})) будет состоятельной для параметра g(a).
+- Если оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является состоятельной для параметра a, то для любой непрерывной функции g, оценка ![](https://latex.codecogs.com/svg.latex?g(\widetilde{a})) будет состоятельной для параметра g(a).
 
-3. Пусть ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является состоятельной для параметра a и ![](https://latex.codecogs.com/svg.latex?D(\widetilde{a})\underset{n\rightarrow\infty}{\rightarrow}0), тогда оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) будет состоятельной для параметра a.
+- Пусть ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) является несмещенной оценкой для параметра a и ![](https://latex.codecogs.com/svg.latex?D(\widetilde{a})\underset{n\rightarrow\infty}{\rightarrow}0), тогда оценка ![](https://latex.codecogs.com/svg.latex?\widetilde{a}) будет состоятельной для параметра a.
 ___
 3. Понятие **Эффективности** оценки в множестве оценок
+
 Предположим, что для
 
 ![](https://latex.codecogs.com/svg.latex?a%20%5Crightarrow%20%5Cbegin%7Bmatrix%7D%20%5Cwidetilde%7Ba%7D%5E%7B%281%29%7D%5C%5C%20%5Cwidetilde%7Ba%7D%5E%7B%28n%29%7D%20%5C%5C%20...%5C%5C%20%5Cwidetilde%7Ba%7D%5E%7B%28m%29%7D%20%5Cend%7Bmatrix%7D)
 
 существуют несмещенные оценки.
-Из них нужно взять ту, у которой меньше Дисперсия ![](https://latex.codecogs.com/svg.latex?D\xi^{*}).
 
-Оценка называется эффективной на некотором множестве, если она имеет наименьшую Дисперсию ![](https://latex.codecogs.com/svg.latex?D\xi^{*}).
+Из них нужно взять ту, у которой меньше Дисперсия ![](https://latex.codecogs.com/svg.latex?D\xi^{*}). Оценка называется **эффективной** на некотором множестве, если она имеет наименьшую Дисперсию ![](https://latex.codecogs.com/svg.latex?D\xi^{*}).
 # 7. Оценка генеральной средней: свойства, формулы для вычисления.
+
 Часто оцениваемым параметром является ![](https://latex.codecogs.com/svg.latex?M\xi)
 
 ![](https://latex.codecogs.com/svg.latex?\widetilde{M\xi}) - оценка
 
 ![](https://latex.codecogs.com/svg.latex?\widetilde{M\xi}=\frac{1}{n}\sum_{i=1}^{n}\xi_{i})
+
+### Здесь на экзамене возможно нужно будет расписать и показать, что эта оценка хорошая (спросить на консультации)
 # 8. Точность и надежность несмещенной оценки для математического ожидания. Три задачи и их решение.
+
 ![](https://latex.codecogs.com/svg.latex?\widetilde{M\xi}=\frac{1}{n}\sum_{i=1}^{n}\xi_{i})
 
 Покажем, что эта оценка хороша
@@ -633,24 +650,25 @@ ___
 ![](https://latex.codecogs.com/svg.latex?M(\frac{1}{n}\sum_{i=1}^{n}\xi_{i})=\frac{1}{n}(M\xi_{1}&plus;M\xi_{2}&plus;...&plus;M\xi_{n})=\frac{1}{n}*n*M\xi=M\xi)
 
 2. **Состоятельность**
+
 n = 1, 2, ...,
 
-
-Получится последовательность оценок
-![](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^{n}\xi_{i}\xrightarrow[n\rightarrow\infty]{P}M\xi)
+Получится последовательность оценок ![](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^{n}\xi_{i}\xrightarrow[n\rightarrow\infty]{P}M\xi)
 
 По Т. Чебышева.
 
 Выполнены условия теоремы Чебышева из нее непосредственно следует это равенство.
 
 3. **Эффективность**
+
 Рассмотрим свойства асимптотической эффективности.
 
 ![](https://latex.codecogs.com/svg.latex?a\rightarrow\widetilde{a}=\varphi(\xi_{1},\xi_{2},...,\xi_{n}))
 
 Если при ![](https://latex.codecogs.com/svg.latex?n\rightarrow\infty), ![](https://latex.codecogs.com/svg.latex?D(\widetilde{a_{n}})\rightarrow0), то оценка асимптотически эффективна.
 
-4. Точность и надежность
+4. **Точность и надежность**
+
 ![](https://latex.codecogs.com/svg.latex?P(|\widetilde{M\xi}-M\xi|<\varepsilon)=\gamma)
 
 Где ![](https://latex.codecogs.com/svg.latex?\widetilde{M\xi}) - С.В.
@@ -663,7 +681,7 @@ n = 1, 2, ...,
 
 ![](https://latex.codecogs.com/svg.latex?\Phi(x)=\frac{2}{\sqrt{2\pi}}*\int_{0}^{x}e^{-\frac{t^{2}}{2}}dt)
 
-![](../images/Mathematical-statistics/ticket08.png)
+![](../../images/Mathematical-statistics/ticket08.png)
 
 * Для того чтобы увеличить гамму, из графика видно, что нужно увеличить аргумент X.
 Если ε задана, Dξ = const, то существует единственный способ - увеличение n.
@@ -698,20 +716,22 @@ n = ?
 
 ![](https://latex.codecogs.com/svg.latex?\frac{\varepsilon\sqrt{n}}{\sqrt{D\xi}}=t_{\gamma}\rightarrow\sqrt{n}=\frac{t_{\gamma}\sqrt{D\xi}}{\varepsilon}=\frac{t_{\gamma}^{2}*D\xi}{\varepsilon^{2}})
 # 9. Смещенная и несмещенная оценки для генеральной дисперсии: свойства, формулы для вычисления.
-Dξ - генеральная дисперсия.
+
+Dξ - **генеральная дисперсия**.
+
 Строим оценку.
 
 1. ![](https://latex.codecogs.com/svg.latex?M\xi=a) - известно
 
 Тогда ![](https://latex.codecogs.com/svg.latex?\widetilde{D\xi}=\frac{1}{n}\sum_{i=1}^{n}(\xi_{i}-a)^{2})
 
-a) Покажем, что оценка **несмещенная**
+- Покажем, что оценка **несмещенная**
 
 ![](https://latex.codecogs.com/svg.latex?M(\widetilde{D\xi})=\frac{1}{n}((\xi_{1}-a)^{2}&plus;(\xi_{2}-a)^{2}&plus;...&plus;(\xi_{n}-a)^{2})=\frac{1}{n}*n*D\xi=D\xi)
 
-b) ![](https://latex.codecogs.com/svg.latex?D(\widetilde{D\xi})\underset{n\rightarrow\infty}{\rightarrow}0) - **асимптотически эффективна**
+- ![](https://latex.codecogs.com/svg.latex?D(\widetilde{D\xi})\underset{n\rightarrow\infty}{\rightarrow}0) - **асимптотически эффективна**
 
-c) **Состоятельность**
+- **Состоятельность**
 
 Из a, b и Теоремы #3 - оценка состоятельна
 ___
@@ -736,6 +756,7 @@ ___
 
 ![](https://latex.codecogs.com/svg.latex?\frac{1}{n}\approx\frac{1}{n-1})
 # 10. Точность и надежность несмещенной оценки для дисперсии. Три задачи и их решение.
+
 Для точного нахождения гамма, нужно знать Dξ и четвёртый центральный момент.
 
 Используем приближенную формулу для нахождения гамма.
@@ -788,7 +809,8 @@ ___
 По этим формулам найдем смещенную оценку ![](https://latex.codecogs.com/svg.latex?D\xi_{*}).
 
 ![](https://latex.codecogs.com/svg.latex?D\xi_{changed}=\frac{n}{n-1}D\xi_{*})
-# Билет 11. Оценка для вероятности: ее свойства, точность и надежность.
+# 11. Оценка для вероятности: ее свойства, точность и надежность.
+
 Пусть имеется случайный эксперимент
 
 ![](https://latex.codecogs.com/svg.latex?P=P(A)=?)
@@ -846,9 +868,7 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 Задача: ![](https://latex.codecogs.com/svg.latex?\gamma&space;,&space;\varepsilon) - известны, нужно найти n. 
 
 ![](https://latex.codecogs.com/svg.latex?\gamma=0,95), то ![](https://latex.codecogs.com/svg.latex?n\approx&space;\frac{1}{\varepsilon&space;^{2}})
-
-
-# 12 Метод моментов для построения оценок неизвестных параметров распределения.
+# 12. Метод моментов для построения оценок неизвестных параметров распределения.
 
 #### Теоретические моменты
 
@@ -858,13 +878,13 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 ![](https://latex.codecogs.com/svg.latex?%5Cbeta_%7Bk%7D%5Cxi%3DM%28%5Cxi-M_%7B%5Cxi%7D%29%5E%7Bk%7D%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%5Csum_%7Bi%7D%28x_%7Bi%7D-M_%7B%5Cxi%7D%29%5E%7Bk%7Dp%28%5Cxi%3Dx_%7Bi%7D%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-d.s.v.%29%5C%5C%5Cint_%7B-%5Cpropto%7D%5E%7B&plus;%5Cpropto%7D%28x-M_%7B%5Cxi%7D%29%5E%7Bk%7Df_%7B%5Cxi%7D%28x%2Ca_%7B1%7D%2Ca_%7B2%7D%2C...%2Ca_%7Bn%7D%2Cesly%5Cxi-n.s.v.%29%5Cend%7Bmatrix%7D%5Cright.) 
 
 
-Записывают так :
+Записывают так:
 
 ![](https://latex.codecogs.com/svg.latex?\alpha&space;_{k}\xi(a_{1},a_{2},...,a_{m}),&space;\beta&space;_{k}\xi(a_{1},a_{2},...,a_{m}))
 
 #### Статистические моменты
 
-![](https://latex.codecogs.com/svg.latex?\alpha&space;_{k}^{*}=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{k}) - начальный момент n-го порядка
+![](https://latex.codecogs.com/svg.latex?\alpha&space;_{k}^{*}=\frac{1}{n}\sum_{i=1}^{n}x_{i}^{k}) - **начальный момент n-го порядка**
 
 ![](https://latex.codecogs.com/svg.latex?\beta&space;_{k}^{*}=\frac{1}{n}\sum_{i=1}^{n}(x_{i}-\bar{x})^{k};\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_{i})
 
@@ -876,7 +896,7 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 Ее нужно решить относительно ![](https://latex.codecogs.com/svg.latex?a_{1},&space;a_{2},..,&space;a_{m})
 
-Возможный несколько случаев
+Возможно несколько случаев:
 
 1. Решение единственно 
 
@@ -893,23 +913,19 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 3. Система не имеет решений.
 
 Говорим, что решений по методу оценок не существует.
-
 При решении задач рекомендуется брать простые моменты
+# 13. Метод максимального правдоподобия для построения оценок. (или "Максимума") 
 
-Пример решения задачи смотри в лекциях
-# 13 Метод максимального правдоподобия для построения оценок. (или "Максимума") 
-
-Суть: строится так называемая функция правдоподобияЮ которая зависит от некоторых параметров
+#### Суть: 
+Строится так называемая **функция правдоподобия**, которая зависит от некоторых параметров
 ![](https://latex.codecogs.com/svg.latex?a_{1},a_{2},...,a_{m})
 
-Далее у этой функции находятся такие параметры ![](https://latex.codecogs.com/gif.latex?a_{1}^{*},a_{2}^{*},...,a_{m}^{*}) , которые обеспечивают максимум и эти значения берутся в качестве оценок максимального правдоподобия
+Далее у этой функции находятся такие параметры ![](https://latex.codecogs.com/svg.latex?a_{1}^{*},a_{2}^{*},...,a_{m}^{*}) , которые обеспечивают максимум и эти значения берутся в качестве оценок максимального правдоподобия
 
 Пусть
 1) ![](https://latex.codecogs.com/svg.latex?\xi&space;-&space;d.s.v,&space;P(\xi&space;=&space;x;&space;a_{1},&space;a_{2},&space;...,&space;a_{m}))
 
-получим выборку
-
-![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},...x_{n})
+получим выборку ![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},...x_{n})
 
 ![](https://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7DP%28%5Cxi%3Dx_%7B1%7D%3B%20a_%7B1%7D%2C..%2Ca_%7Bm%7D%29%20%5C%5C%20P%28%5Cxi%3Dx_%7B2%7D%3B%20a_%7B1%7D%2C..%2Ca_%7Bm%7D%29%20%5C%5C%20%5Ccdot%20%5C%5C%20%5Ccdot%20%5C%5C%20%5Ccdot%20%5C%5C%20P%28%5Cxi%3Dx_%7Bn%7D%3B%20a_%7B1%7D%2C..%2Ca_%7Bm%7D%29%20%5Cend%7Bmatrix%7D)
 
@@ -917,9 +933,7 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 2) ![](https://latex.codecogs.com/svg.latex?\xi-n.s.v,f_{\xi}(x;a_{1},a_{2},...,a_{m}))
 
-получим выборку
-
-![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},...x_{n})
+получим выборку ![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},...x_{n})
 
 Считаем эту плотность для полученных значений
 ![](https://latex.codecogs.com/svg.latex?L_{x_{1},x_{2},...,x_{n}}(a_{1},a_{2},..,a_{m})=\prod_{i=1}^{n}f_{\xi}(x_{i},a_{1},a_{2},..,a_{m}))
@@ -939,27 +953,25 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 Обычно находят так :
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%5Cfrac%7B%5Cpartial%20ln%20%28L%28a_%7B1%7D%2Ca_%7B2%7D%2C..%2Ca_%7Bn%7D%29%29%7D%7B%5Cpartial%20a_%7Bj%7D%7D%20%3D%200%20%5C%5C%20j%20%3D%20%5Coverline%7B1%2C%20m%7D%20%5Cend%7Bmatrix%7D%5Cright.)
-
-Примеры решения задач смотреть в лекциях
 # 14. Точечные и интервальные оценки. Доверительные интервалы.
 
-Оценки, которые задаются одним числом называться точечными. Если объем выборки n большой, то оценки дают достаточно хорошие результаты. 
+Оценки, которые задаются одним числом называться **точечными**. Если объем выборки n большой, то оценки дают достаточно хорошие результаты. 
 
 
 Если n маленькое, то надежность этих оценок ![](https://latex.codecogs.com/svg.latex?\gamma) является маленькой.
 
-Увеличить надежность можно только увеличив объем выборки. Но существует множество задач, в которых новые измерения дорогостоящие. В этом случае вместо точечных оценок строят интервальные оценки.
+Увеличить надежность можно только увеличив объем выборки. Но существует множество задач, в которых новые измерения дорогостоящие. В этом случае вместо точечных оценок строят **интервальные оценки**.
 
 Вместо одного числа предлагают целый интервал.
 параметр ![](https://latex.codecogs.com/svg.latex?a\rightarrow&space;\tilde{a}) точечная оценка
 
-![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}&space;-&space;a\right&space;|<\varepsilon&space;)), где ![](https://latex.codecogs.com/svg.latex?\varepsilon) - точечная оценка
+![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}&space;-&space;a\right&space;|<\varepsilon&space;)), где ![](https://latex.codecogs.com/svg.latex?\varepsilon) - **точечная оценка**
 
 Если ![](https://latex.codecogs.com/svg.latex?\varepsilon&space;\rightarrow&space;0,&space;\gamma&space;\rightarrow&space;1) - это хорошо.
 
 ![](https://latex.codecogs.com/svg.latex?\tilde{a}-\varepsilon&space;<&space;a&space;<&space;\tilde{a}&plus;\varepsilon&space;;&space;\tilde{a}-\varepsilon&space;=\tilde{a_{1}};\tilde{a}&plus;\varepsilon&space;=\tilde{a_{2}}) (1)
 
-![](https://latex.codecogs.com/svg.latex?(\tilde{a_{1}},\tilde{a_{2}})) - доверительный интервал, который покрывает неизвестный параметр а с данной надежностью ![](https://latex.codecogs.com/svg.latex?\gamma)
+![](https://latex.codecogs.com/svg.latex?(\tilde{a_{1}},\tilde{a_{2}})) - **доверительный интервал**, который покрывает неизвестный параметр а с данной надежностью ![](https://latex.codecogs.com/svg.latex?\gamma)
 
 Увеличиваем надежность, тогда теряем точность (интервал)
 
@@ -970,9 +982,6 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 Задача сводится к нахождению ![](https://latex.codecogs.com/svg.latex?\varepsilon)
 
 ![](https://latex.codecogs.com/svg.latex?\gamma) - Дано. То есть мы подгоняем интервал под надежность
-
-
-
 # 15. Построение доверительных интервалов для неизвестного математического ожидания нормального распределения при известной дисперсии.
 
 #### Построение доверительных интервалов для неизвестного параметра а нормального распределения при известном параметре ![](https://latex.codecogs.com/svg.latex?\sigma)
@@ -1005,9 +1014,7 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 ![](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^{n}\xi_{i}-&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}}<a<\frac{1}{n}\sum_{i=1}^{n}\xi_{i}&plus;&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}})
 
-Пусть задана выборка (конкретные числа)
-
-![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},..,x_{n})
+Пусть задана выборка (конкретные числа): ![](https://latex.codecogs.com/svg.latex?x_{1},x_{2},..,x_{n})
 
 Нужно посчитать их среднее арифметическое 
 
@@ -1017,59 +1024,56 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 ![](https://latex.codecogs.com/svg.latex?\bar{x}-&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}}<a<\bar{x}&plus;&space;\frac{t_{\gamma&space;}\cdot&space;\sigma&space;}{\sqrt{n}})
 
-Замечание: полученную формулу для доверительного интервала можно использовать для любого параметра
-
+### Замечание:
+Полученную формулу для доверительного интервала можно использовать для любого параметра
 # 16. Статистические гипотезы. Основные определения: нулевая, альтернативная, простая и сложная. Критерий согласия, критическая область.
 
-Статистической гипотезой называется предположение о законе распределения или о параметре распределения
-случайной величины ![](https://latex.codecogs.com/svg.latex?\xi)
+**Статистической гипотезой** называется предположение о законе распределения или о параметре распределения случайной величины ![](https://latex.codecogs.com/svg.latex?\xi)
 
-Нулевая гипотеза ![](https://latex.codecogs.com/svg.latex?H_{0}) - основное выдвинутое предположение
+**Нулевая гипотеза** ![](https://latex.codecogs.com/svg.latex?H_{0}) - основное выдвинутое предположение
 
-![](https://latex.codecogs.com/svg.latex?H_{1}) - альтернативная или конкурирующая гипотеза (
-предположение, противоречащее ![](https://latex.codecogs.com/svg.latex?H_{0}) )
+![](https://latex.codecogs.com/svg.latex?H_{1}) - **альтернативная или конкурирующая гипотеза** (предположение, противоречащее ![](https://latex.codecogs.com/svg.latex?H_{0}) )
 
-Гипотеза называется простой, если она точно формулирует, и законы распределения, и все его параметры.
-В противном случае называется ложной 
+Гипотеза называется **простой**, если она точно формулирует, и законы распределения, и все его параметры.
+В противном случае называется **ложной** 
 
-Для проверки гипотез выбирается критерий согласия - случайная величина, которая определяет
-правила проверки и закон распределения, который не зависит от гипотезы, которую мы выдвигаем
+Для проверки гипотез выбирается **критерий согласия** - случайная величина, которая определяет правила проверки и закон распределения, который не зависит от гипотезы, которую мы выдвигаем
 
-![](https://latex.codecogs.com/svg.latex?W_{0}) - критической областью называется множество значений этой случайной величины, при которой эта гипотеза отвергается.
+![](https://latex.codecogs.com/svg.latex?W_{0}) - **критической областью** называется множество значений этой случайной величины, при которой эта гипотеза отвергается.
 
-Правило проверки. Для проверки получаем независимую выборку ![](https://latex.codecogs.com/svg.latex?x_{1},&space;x_{2},..,x_{n}) По этим полученным данным получаем значение критерия согласия
+#### Правило проверки.
+
+Для проверки получаем независимую выборку ![](https://latex.codecogs.com/svg.latex?x_{1},&space;x_{2},..,x_{n}) По этим полученным данным получаем значение критерия согласия
 Более подробно в следующем билете
-
 # 17. Правило проверки гипотезы. Ошибки первого и второго рода. Уровень значимости и мощность критерия.
 
-Правило проверки. Для проверки получаем независимую выборку ![](https://latex.codecogs.com/svg.latex?x_{1},&space;x_{2},..,x_{n}) По этим полученным данным получаем значение критерия согласия
+#### Правило проверки.
+Для проверки получаем независимую выборку ![](https://latex.codecogs.com/svg.latex?x_{1},&space;x_{2},..,x_{n}) По этим полученным данным получаем значение критерия согласия
 
 Если это значение попало в критическую область ![](https://latex.codecogs.com/svg.latex?W_{0}), то гипотезу ![](https://latex.codecogs.com/svg.latex?H_{0}) отвергаем и принимаем  ![](https://latex.codecogs.com/svg.latex?H_{1}).
 
 Если значение критерия не попало в критическую область, то принимаем
 
-При проверки гипотез можно сделать ошибки двух видов
+При проверки гипотез можно сделать ошибки двух видов:
 
-1) Ошибка первого рода.
+1. **Ошибка первого рода**.
 
 Будет отвергнута ![](https://latex.codecogs.com/svg.latex?H_{0}) при условии, что она верна.
-Вероятность этой ошибки называется уровнем значимости критерия ![](https://latex.codecogs.com/svg.latex?\alpha) - всегда задается постановщиком задачи (обычно 0,05 0,1)
+Вероятность этой ошибки называется **уровнем значимости критерия** ![](https://latex.codecogs.com/svg.latex?\alpha) - всегда задается постановщиком задачи (обычно 0,05 0,1)
 
-2) Ошибка второго рода.
+2. **Ошибка второго рода**.
 
-Будет принята ![](https://latex.codecogs.com/svg.latex?H_{0}) при условии, что верна ![](https://latex.codecogs.com/svg.latex?H_{1}) . Вероятность этой ошибки ![](https://latex.codecogs.com/svg.latex?\beta) - оперативная характеристика критерия по отношению к ![](https://latex.codecogs.com/svg.latex?H_{1}) . Обычно рассматривается ![](https://latex.codecogs.com/svg.latex?(1-\beta)) - вероятность принять ![](https://latex.codecogs.com/svg.latex?H_{0}) при условии, что она верна
+Будет принята ![](https://latex.codecogs.com/svg.latex?H_{0}) при условии, что верна ![](https://latex.codecogs.com/svg.latex?H_{1}) . Вероятность этой ошибки ![](https://latex.codecogs.com/svg.latex?\beta) - **оперативная характеристика критерия** по отношению к ![](https://latex.codecogs.com/svg.latex?H_{1}) . Обычно рассматривается ![](https://latex.codecogs.com/svg.latex?(1-\beta)) - вероятность принять ![](https://latex.codecogs.com/svg.latex?H_{0}) при условии, что она верна
 
-Обычно рассматривается ![](https://latex.codecogs.com/svg.latex?(1-\beta)) - мощность критерия (вероятность правильного решения)
+Обычно рассматривается ![](https://latex.codecogs.com/svg.latex?(1-\beta)) - **мощность критерия** (вероятность правильного решения)
 
-Основная задача проверки гипотез - сконструировать такой критерий согласия, который бы при заданном уровне ![](https://latex.codecogs.com/svg.latex?\alpha) обеспечивал бы большую мощность
- 
-
-
+#### Основная задача проверки гипотез
+Сконструировать такой критерий согласия, который бы при заданном уровне ![](https://latex.codecogs.com/svg.latex?\alpha) обеспечивал бы большую мощность
 # 18. Критерий согласия Пирсона для дискретных случайных величин.
 
-### Проверка гипотезы о законе распределения при помощи критерия "Хи-квадрат" Пирсона (Согласия Пирсона)
+### Проверка гипотезы о законе распределения при помощи критерия ![](https://latex.codecogs.com/svg.latex?\chi_{cr}^{2})("Хи-квадрат") Пирсона (Согласия Пирсона)
 
-Пусть гипотеза ![](https://latex.codecogs.com/svg.latex?H_{0}): случайная величина ![](https://latex.codecogs.com/svg.latex?\xi) имеет функция распределения ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=) ______ - формула
+Пусть гипотеза ![](https://latex.codecogs.com/svg.latex?H_{0}): случайная величина ![](https://latex.codecogs.com/svg.latex?\xi) имеет функция распределения ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=) - формула (не важно какая)
 
 Гипотеза ![](https://latex.codecogs.com/svg.latex?H_{1}): функция распределения - другая формула
 
@@ -1089,13 +1093,13 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 ![](https://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7D%20P_%7B1%7D%3DP%28%5Cxi%20%3D%20x_%7B1%7D%29%5C%5C%20P_%7B2%7D%3DP%28%5Cxi%20%3D%20x_%7B2%7D%29%20%5C%5C%20...%20%5C%5CP_%7Bk%7D%3DP%28%5Cxi%20%3D%20x_%7Bk%7D%29%20%5Cend%7Bmatrix%7D)
 
-Мера расхождения между ними:
+**Мера расхождения** между ними:
 
 ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}C_{i}(p_{i}^{*}-p_{i})^2)
 
-![](https://latex.codecogs.com/svg.latex?С_{i}) - веса, константы
+![](https://latex.codecogs.com/svg.latex?C_{i}) - **веса, константы**
 
-Пирсон предложил в качестве ![](https://latex.codecogs.com/svg.latex?С_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
+Пирсон предложил в качестве ![](https://latex.codecogs.com/svg.latex?C_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
 
 ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{n}{p_{i}}\cdot&space;C_{i}(p_{i}^{*}-p_{i})^2&space;=&space;...&space;=\sum_{i=1}^{k}\frac{(n_{i}-np_{i})^2}{np_{i}})
 
@@ -1104,15 +1108,15 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 Тогда R - это случайная величина
 
 Пирсон доказал, что данная случайная величина при достаточно больших значений n не зависит
-от функции ![](https://latex.codecogs.com/svg.latex?F_{\xi&space;}(x)) и имеет распределение Хи-квадрат
+от функции ![](https://latex.codecogs.com/svg.latex?F_{\xi&space;}(x)) и имеет распределение ![](https://latex.codecogs.com/svg.latex?\chi_{cr}^{2})
 
 Пусть случайные величины ![](https://latex.codecogs.com/svg.latex?\xi_{1},&space;\xi_{2},&space;...,&space;\xi_{r}) являются независимыми и все они имеют стандартное нормальное распределение
 
-![](https://latex.codecogs.com/svg.latex?\chi&space;=&space;\sum_{i=1}^{r}\xi&space;^{2}_{i})
+![](https://latex.codecogs.com/svg.latex?\chi_{r}^{2}&space;=&space;\sum_{i=1}^{r}\xi&space;^{2}_{i})
 
 (2 - это не квадрат, а обозначение)
 
-Параметр r - называют число степеней свобод
+Параметр r - называют **число степеней свобод**
 
 Для нее составлено много разных таблиц, которыми мы можем пользоваться. Для использования этого критерия нужно найти число степеней свободы r
 
@@ -1120,7 +1124,7 @@ p, q - мы не знаем. p, q мы заменяем оценками.
 
 Если в гипотезе ![](https://latex.codecogs.com/svg.latex?H_{0}) не все параметры указаны точно и S параметр приходится считать по выборке ![](https://latex.codecogs.com/svg.latex?r=k-1-S ) 
 
-#### Правила применения критерия Хи-квадрат на практике
+#### Правила применения критерия ![](https://latex.codecogs.com/svg.latex?\chi_{cr}^{2}) на практике
 
 1. По полученным данным, где в таблице конкретные числа нужно вычислить R наблюдаемое
 
@@ -1151,12 +1155,11 @@ II Другие таблицы
 Если ![](https://latex.codecogs.com/svg.latex?P_{0}\leq&space;\alpha) , то гипотезу ![](https://latex.codecogs.com/svg.latex?H_{0}) отвергаем, если ![](https://latex.codecogs.com/svg.latex?P_{0}>&space;\alpha), то гипотезу принимаем
 
  ![](https://latex.codecogs.com/svg.latex?\alpha) - берут больше нуля
- 
- # 19. Критерий согласия Пирсона для непрерывных случайных величин.
+# 19. Критерий согласия Пирсона для непрерывных случайных величин.
 
-### Проверка гипотезы о законе распределения при помощи критерия "Хи-квадрат" Пирсона (Согласия Пирсона)
+### Проверка гипотезы о законе распределения при помощи критерия ![](https://latex.codecogs.com/svg.latex?\chi_{cr}^{2})("Хи-квадрат") Пирсона (Согласия Пирсона)
 
-Пусть гипотеза ![](https://latex.codecogs.com/svg.latex?H_{0}): случайная величина ![](https://latex.codecogs.com/svg.latex?\xi) имеет функция распределения ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=) ______ - формула
+Пусть гипотеза ![](https://latex.codecogs.com/svg.latex?H_{0}): случайная величина ![](https://latex.codecogs.com/svg.latex?\xi) имеет функция распределения ![](https://latex.codecogs.com/svg.latex?F_{\xi}(x)=) - формула(не важно какая)
 
 Гипотеза ![](https://latex.codecogs.com/svg.latex?H_{1}): функция распределения - другая формула
 

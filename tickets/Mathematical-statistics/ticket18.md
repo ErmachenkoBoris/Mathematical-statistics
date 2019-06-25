@@ -28,7 +28,7 @@
 
 ![](https://latex.codecogs.com/svg.latex?C_{i}) - **веса, константы**
 
-Пирстон предложил в качестве ![](https://latex.codecogs.com/svg.latex?C_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
+Пирсон предложил в качестве ![](https://latex.codecogs.com/svg.latex?C_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
 
 ![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{n}{p_{i}}\cdot&space;C_{i}(p_{i}^{*}-p_{i})^2&space;=&space;...&space;=\sum_{i=1}^{k}\frac{(n_{i}-np_{i})^2}{np_{i}})
 
@@ -63,7 +63,7 @@
 
 2. Высчитываем r=k-1-S
 
-3. Далее есть 2 пути (взависимости от таблиц)
+3. Далее есть 2 пути (в зависимости от таблиц)
 
 I. Есть таблица критических точек
 

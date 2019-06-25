@@ -27,4 +27,4 @@
 ![](https://latex.codecogs.com/svg.latex?F_\xi_1(x)=F_{\xi_1\xi_2}(x,&plus;\infty))
 ![](https://latex.codecogs.com/svg.latex?F_\xi_2(y)=F_{\xi_1\xi_2}(&plus;\infty,y))
 
-Зная совместную двумерную функцию распределения, можно всегда, и притом однозначно, получить фукнции распределения отдельно для ![](https://latex.codecogs.com/svg.latex?\xi_1) и для ![](https://latex.codecogs.com/svg.latex?\xi_2). Неверно в обратную сторону.
+Зная совместную двумерную функцию распределения, можно всегда, и притом однозначно, получить функции распределения отдельно для ![](https://latex.codecogs.com/svg.latex?\xi_1) и для ![](https://latex.codecogs.com/svg.latex?\xi_2). Неверно в обратную сторону.
