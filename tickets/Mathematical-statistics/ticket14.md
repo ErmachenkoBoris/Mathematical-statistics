@@ -10,7 +10,7 @@
 Вместо одного числа предлагают целый интервал.
 параметр ![](https://latex.codecogs.com/svg.latex?a\rightarrow&space;\tilde{a}) точечная оценка
 
-![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}&space;-&space;a\right&space;|<\varepsilon&space;)), где ![](https://latex.codecogs.com/svg.latex?\varepsilon) - **точечная оценка**
+![](https://latex.codecogs.com/svg.latex?\gamma&space;=&space;p(\left&space;|&space;\tilde{a}&space;-&space;a\right&space;|<\varepsilon&space;)), где ![](https://latex.codecogs.com/svg.latex?\tilde{a}) - **точечная оценка**
 
 Если ![](https://latex.codecogs.com/svg.latex?\varepsilon&space;\rightarrow&space;0,&space;\gamma&space;\rightarrow&space;1) - это хорошо.
 
