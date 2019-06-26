@@ -30,7 +30,7 @@
 
 Пирсон предложил в качестве ![](https://latex.codecogs.com/svg.latex?C_{i}) взять величину ![](https://latex.codecogs.com/svg.latex?\frac{n}{p_{i}})
 
-![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{n}{p_{i}}\cdot&space;C_{i}(p_{i}^{*}-p_{i})^2&space;=&space;...&space;=\sum_{i=1}^{k}\frac{(n_{i}-np_{i})^2}{np_{i}})
+![](https://latex.codecogs.com/svg.latex?R=\sum_{i=1}^{k}\frac{n}{p_{i}}\cdot&space;(p_{i}^{*}-p_{i})^2&space;=&space;...&space;=\sum_{i=1}^{k}\frac{(n_{i}-np_{i})^2}{np_{i}})
 
 В этой формуле ![](https://latex.codecogs.com/svg.latex?n_{1},&space;n_{2},&space;...,&space;n_{k}) есть случайные величины
 
